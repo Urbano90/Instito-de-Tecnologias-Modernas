@@ -1,0 +1,346 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+
+.container-rector {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+.rector-foto {
+width: 50%;
+}
+.rector-foto img {
+    height: 95%;
+    width: 95%;
+    object-fit: cover;
+    box-shadow: 0px 2px 3px 8px rgba(30, 40, 0, .90);
+}
+.rector-discurso {
+    width: 70%;
+    height: 100%;
+    padding-top: 40px;
+    color: #1f2b2b;
+}
+.rector-discurso2  {
+    display: none;
+    margin: 0 30px;
+    color: #1f2b2b;
+}
+.rector-discurso2.activo  {
+    display: inline-block;
+}
+.firma {
+    display: grid;
+    justify-content: end;
+    margin: 20px;
+}
+.boton-discurso {
+    border-radius: 5px;
+    background: rgba(0, 128, 0, 0.744);
+    color: white;
+    font-size: 15px;
+    margin: 20px 30%;
+    cursor: pointer;
+    padding-top: 5px ;
+    padding-bottom: 10px ;
+    width: 150px;
+    border: none;
+    box-shadow: 0px 2px 1px 1px rgba(30, 40, 0, .6);
+}
+.boton-discurso:hover {
+    background: rgb(25, 215, 25);
+    height: 45px;
+}
+
+
+.historia {
+    margin: auto 40px;
+    padding: 20px;
+    font-size: 15px;
+    color: #273939;
+}
+.info-unge {
+display: block;
+width: 90%;
+margin: 0 auto;
+}
+.organos-gobierno {
+   width: 100%;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   background:  rgb(10, 14, 21);
+   color: #fff;
+   box-shadow: 0px 2px 1px 1px rgba(30, 40, 0, .6);
+   margin-bottom: 4rem;
+   padding: 10px;
+}
+.organos-gobierno div {
+    font-weight: bold;
+    margin: auto 10px;
+}
+.organos-gobierno p {
+    margin: auto 10px;
+}
+.organos-gobierno h4, .organos-gobierno  h3{
+    margin: 10px 10px;
+    color: #fff;
+    font-size: 18px;
+}
+.title-campus-facultades {
+    font-size: 1rem;
+    color: #fff;
+    background: rgb(10, 14, 21);
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+ }
+   .campus-facultades {
+    display: grid;
+    width: 80%;
+    justify-content: center;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    border-radius: 20px;
+    }
+    .title-campus-facultades p {
+        margin: auto 10px;
+        font-size: 14px;
+    }
+    .campus-facultades a {
+        display: grid;
+        font-weight: bold;
+        margin: 10px 10px;
+        background: #c7d4d4;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 1px 1px 3px rgba(30, 40, 0, .6);
+        text-align: center;
+        background: rgba(0, 98, 255, 0.29);
+        color: #364343;
+        font-size: 13px;
+
+    }
+    .campus-facultades a img {
+        margin: 0 auto;
+        height: 30px;
+        width: 30px;
+    }
+    .campus-facultades .title {
+        margin: 10px 0;
+        color: red;
+        font-size: 20px;
+        padding: 10px;
+    }
+    .campus-facultades a:hover {
+        background: rgba(206, 4, 4, 0.765);
+        color: white;
+    }
+      
+.record {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+.record div {
+    background: rgb(10, 14, 21);
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+    display: grid;
+    align-items: center;
+    box-shadow: 0px 1px 1px 3px rgba(30, 40, 0, .6);
+    margin: 0 auto;
+    margin: 10px;
+}
+.record .p1 {
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+.record .p2 {
+    font-size: 12px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+.record h3 {
+    font-size: 15px;
+    color:  rgba(206, 4, 4, 0.765);
+    margin: 0 auto;
+}
+    .container-form {
+        display: block;
+        justify-content: center;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .container-form h4 {
+        margin: 10px;
+        padding: 10px;
+    }
+    .form-contacto {
+        width: 80%;
+        background: #c7d4d4;
+        color: #273939;
+        box-shadow: 0px 1px 1px 3px rgba(30, 40, 0, .6);
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 20px;
+        padding: 5px 0;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+    .form {
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .title-form {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 20px;
+        padding: 5px;
+        color: #fff;
+        background: rgba(206, 4, 4, 0.765);
+        box-shadow: 0px 2px 3px 8px rgba(30, 40, 0, .6);
+        transition:cubic-bezier(0.15845, 0.885, 0.32, 1.275);
+    }
+    input {
+        height: 30px;
+        border-radius: 10px;
+        margin: 5px auto;
+        width: 80%;
+        padding: 10px;
+        box-shadow: 0px 2px 1px 1px rgba(30, 40, 0, .6);
+        border: none;
+    }
+    .input-enviar {
+        margin: 10px auto;
+        height: 40px;
+        width: 100px;
+        background: rgba(0, 128, 0, 0.744);
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+    .input-enviar:hover {
+        background: rgb(25, 215, 25);
+        height: 45px;
+    }
+    select {
+        height: 30px;
+        margin: 5px auto;
+        width: 80%;
+        box-shadow: 0px 2px 1px 1px rgba(30, 40, 0, .6);
+        border: none;
+    }
+    textarea {
+        width: 80%;
+        padding: 10px;
+        margin: 5px auto;;
+    }
+@media screen and (max-width: 1000px) {
+    .contenedor {
+        margin: auto;
+        width: 100%;
+    }
+    .container-rector {
+        display: grid;
+        grid-template-columns: repeat(1, 100%)
+    }
+    .rector-foto {
+        width: 100%;
+        margin: 10px auto;
+    }
+    .rector-discurso {
+        width: 100%;
+    }
+    .info-unge {
+        display: grid;
+        grid-template-columns: repeat(1, 100%)
+    }
+    .historia {
+        margin: auto 10px;
+  
+    }
+    .organos-gobierno {
+        width: 100%;
+        display: grid;
+        margin: 20px auto;
+    }
+    .campus-facultades {
+        width: 100%;
+        display: grid;
+        margin: 20px auto;
+    }
+    .directiva {
+        width: 90%;
+        height: 90%;
+    }
+    section {
+        box-shadow: none;
+        border: none;
+    }
+    .container-form {
+        box-shadow: none;  
+        width: 70%;
+    }
+    .form-contacto {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .form-contacto {
+        width: 100%;
+    }
+    .title-form {
+       font-size: 19px;
+    }
+    input {
+       width: 90%;
+    }
+    select {
+       width: 90%;
+    }
+    textarea {
+       width: 90%;
+    }
+    }
+
+@media screen and (max-width: 500px) {
+    .campus-facultades {
+        width: 100%;
+    }
+      .container-form {
+        box-shadow: none;  
+        width: 90%;
+    }
+    .form-contacto {
+        width: 100%;
+        box-shadow: none;
+    }
+    .title-form {
+        font-size: 18px;
+    }
+    .record {
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        width: 50%;
+
+    }
+    }

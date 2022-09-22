@@ -1,0 +1,100 @@
+
+.container-slider {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 80%;
+    margin: .1rem auto;
+    overflow: hidden;
+    box-shadow: 0 0 0 10px #fff,
+                0 15px 50px;
+                position: relative;
+                margin-top: 20px;
+}
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500%; /*se pone el porcentaje dependiendo de la cantidades de imagenes que tienes*/
+    height: 400px;
+    margin-left: -100%;
+    position: relative;
+}
+.slider:before { /* para poner el slider oscuro*/
+    content: "";
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+.slider__section {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.slider__section .slider__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 90vw;
+    max-height: 70vh;
+    object-fit: contain;  
+    border-radius: px; 
+}
+.container-btn__slider {
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    width: 90%;
+    left: 5%;
+    top: -13rem;
+}
+.slider__btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background:  rgba(7, 82, 194, 0.484); 
+    font-size: 30px;
+    font-size: bold;
+    align-items: center;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slider__btn:hover {
+    background: rgba(6, 6, 6, 0.216);
+}
+.slider__btn--left {
+    left: 10px;
+}
+.slider__btn--right {
+    right: 10px;
+}
+.slider__content {
+    position: absolute;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: rgb(7, 82, 194);
+    font-weight: bold;
+    padding: 15px;
+    top: 300px;
+    background: rgba(255, 255, 255, 0.519);
+}
+.slider__title {
+    font-size: 2.2rem;
+    text-align: center;
+}
+.slider__txt {
+    text-align: center;
+    margin: 5px 0;
+}

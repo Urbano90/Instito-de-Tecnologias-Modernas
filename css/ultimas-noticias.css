@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: calibri;
+    font-size: 15px;
+}
+.title {
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+.escudo-unge {
+    height: 150px;
+    width: 100%;
+    object-fit: contain;
+}
+.noticia1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.noticia1 img {
+    width: 50%;
+    object-fit: cover;
+}
+.info1 {
+    width: 48%;
+    margin-top: 40px;
+}
+.foto3 img {
+    width: 80%;
+    margin-top: 40px;
+}
+.noticia2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); 
+    width: 100%;
+}
+.noticia2 img {
+    width: 98%;
+    object-fit: cover;
+}
+.info2 {
+    width: 98%;
+}
+
+@media screen and (max-width: 600px) {
+    .noticia1 {
+        display:block;
+    }
+    .noticia1 img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .info1 {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .noticia2 {
+        grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); 
+    }
+  
+}
+

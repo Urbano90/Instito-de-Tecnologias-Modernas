@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/calendario.css">
+    <title>Calendario</title>
+</head>
+<body>
+    <nav class="menu" id="menu">
+        <div class="contenedor  contenedor-botones-menu">
+            <!-- Los dos botones deben contener los iconos de menu y cerrar menu-->
+            <button id="btn-menu-barras" class="btn-menu-barras"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAG9JREFUSEvtlckNwCAQA01nlEY6g8qC9rEfjigPKyBiF+CRRoYNWJSwiAuBPzMv1a46AbiJ3q+2a6aaCTVmx9kOTLQ8rtKq3Uskr7po1bNxmWpm8lvVTOiwS8/Jtfzvr7azyEzXp3Ex9T52SfX5qisn1AwfJnWg+AAAAABJRU5ErkJggg=="/> </button>
+            <button id="btn-menu-cerrar"  class="btn-menu-cerrar"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAATxJREFUSEvVluFtwkAMRl8maDegI8AElBGYgLIBGwAbdIOWDdgAmKAdod0AJmj1STG6nJIUYUdJLeXHJSe/fLbPvoKerOiJy6DAT8AoOBLfwFfqM1f8DiyCoeZOvpe2SMEvwFtHUHM7B/ZapOANsO4YvAXEGR74FKx8Wvr7U3H0Mfv5t+BHQOf8M0vFuDyn54YUuRQLeijBswQuqN6rQeh9HdwFTo+bnAsiE1Q/JbsWT6bcBZavtLOZMoPuADWhOnODc7hB2qDaEwJWTj8yWZOagku3uMFWSBZec245z6vdvrvAOVThldk0a4O7wUfgAUhzagV3AZ4bQu4CS51Uq3JXWY5fy4rvJNSeueFWfC/8ZrByFWmqjUpnG8TVp6krRSmvdLe6ga+xpyfSNLlar7eRsFZf0Vecm3+8N/Av4CBiH30a7RMAAAAASUVORK5CYII="/> </button>
+        </div>
+        <div class="contenedor contenedor-enlaces-nav" >   <!-- Contenedor de enlaces principales-->
+           <div class="btn-departamentos" id="btn-departamentos" >
+               <p>Todas las <span> Facultades </span> </p>  <!--le hemos puesto span para que el departamento le podamos editar aparte y ponerle debajo de 'todos los'-->
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAM1JREFUSEvtlOENwiAQRl8nsCM4giO4iXUyHcURHMERdAPzJZA0pnAcreIP+EXCcS/f49qBRmtoxKWDf2a+q+6qv2bg74frCNwK4xfVliSegAtwBc4GXDWnUKd9clngEXgAu9AhB49Qlb6APfBMkS2w7h2C5hz8Eyrd9zWJ490c3A1V05LEObju602jXjNpbOYBL2mPffSmxVBv4lRyN7QWPE+uvStprer5oGrgtLLTu+ZzMv4Zdcfe4aqjLNzq4M1UWo26asvQZufNVL8BhbkiH/8ZzykAAAAASUVORK5CYII="/> <!--El icono que debe estar al lado del departamento con señalización de abajo-->
+           </div>
+
+           <div class="enlaces">
+               <a href="./index.html">Home</a>
+               <a href="./idiomas.html">Idiomas</a>
+               <a href="./Calendario-anual.html">Calendario anual</a>
+               <a href="./ultimas-noticias.html">Última noticia</a>
+               <a href="./sobre-nosotros.html">Sobre nosotros</a>
+           </div>
+        </div>
+        <div class="contenedor contenedor-grid">   <!-- Contenedor de subenlaces de departamentos -->
+              <div  class="grid" id="grid" >
+                  <div class="categorias" >
+                     <button class="btn-regresar"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAOJJREFUSEvtld0NwjAMhK+bwQawAUxW2IARGAE2YQTkKkGRldY/dRoeWqkvaePP5/icAZ2eoRMXO3izyntKfQHwSq87USuYoCOAD4DjGrgFnKFZ5RXAzStZCw6FUrIacDhUA24ClcDNoEvgptA5MIdS57q7t+j6d7LhtMSbi0O9bqntI98/84e/AVNCXPU9qNQ0ZmniVUud17s01yZwaXI1Uy6Ba2e+6nKQzpjbIVy5RvHcmZ8BPLxGt4DLstMUOpT2sCZgBVP8U5pAP09aodLt5Imn3uNRrA6+9OMODimjJsgXhoMuHz3E3JMAAAAASUVORK5CYII="/> Regresar</button>
+                     <h3 class="subtitulo">Categorias</h3>
+
+                     <a href="#" data-categoria="facultad-y-computadoras">Facultad de Derecho y Ciencias Políticas (MALABO)<img src="#" alt="flecha"> </a> <!--Para ver los detalles cuando pasamos el cursor-->
+                     <a href="#" data-categoria="facultad-medio-ambiente">Facultad de Medio Ambiente (MALABO)<img src="#" alt="flecha"> </a> <!--Para ver los detalles cuando pasamos el cursor-->
+                     <a href="#" data-categoria="facultad-informacion-filologia">Facultad de Ciencias de Información y Filología Lingüística (MALABO)<img src="#" alt="flecha"> </a> <!--Para ver los detalles cuando pasamos el cursor-->
+                     <a href="#" data-categoria="facultad-pedagogia-educacion">Facultad de Pedagogía y Ciencias de Educacíon (MALABO-BATA)<img src="#" alt="flecha"> </a> <!--Para ver los detalles cuando pasamos el cursor -->
+                     <a href="#" data-categoria="facultad-ingenieria-tecnologia">Facultad de Ingenierías y Tecnologías (MALABO)<img src="#" alt="flecha"> </a> <!--Para ver los detalles cuando pasamos el cursor -->
+                     <a href="#" data-categoria="facultad-humanidades-religiosa">Facultad de Humanidades y Ciencias Religiosas (MALABO-BATA)<img src="#" alt="flecha"> </a> <!--Para ver los detalles cuando pasamos el cursor-->
+                     <a href="#" data-categoria="facultad-economicas-administracion">Facultad de Ciencias Económicas, Gestión y Administración (MALABO)<img src="#" alt="flecha"> </a> <!--Para ver los detalles cuando pasamos el cursor-->
+                     <a href="#" data-categoria="facultad-salud">Facultad de Ciencias de Salud (BATA)<img src="#" alt="flecha"> </a> <!--Para ver los detalles cuando pasamos el cursor-->
+                     <a href="#" data-categoria="facultad-arquitectura-ingenieria">Facultad de Arquitectura e ingeniería (BATA)<img src="#" alt="flecha"> </a> <!--Para ver los detalles cuando pasamos el cursor-->
+                     <a href="#" data-categoria="facultad-psicologia-morales">Facultad de Psicología y Ciencias Morales (MONGOMO)<img src="#" alt="flecha"> </a> <!--Para ver los detalles cuando pasamos el cursor-->
+                  </div>
+                  <div class="contenedor-subcategorias" >
+                    <div class="subcategoria activo" data-categoria="facultad-y-computadoras">
+                            <div class="enlaces-subcategoria">
+                                <button class="btn-regresar"> <img class="atras" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAOJJREFUSEvtld0NwjAMhK+bwQawAUxW2IARGAE2YQTkKkGRldY/dRoeWqkvaePP5/icAZ2eoRMXO3izyntKfQHwSq87USuYoCOAD4DjGrgFnKFZ5RXAzStZCw6FUrIacDhUA24ClcDNoEvgptA5MIdS57q7t+j6d7LhtMSbi0O9bqntI98/84e/AVNCXPU9qNQ0ZmniVUud17s01yZwaXI1Uy6Ba2e+6nKQzpjbIVy5RvHcmZ8BPLxGt4DLstMUOpT2sCZgBVP8U5pAP09aodLt5Imn3uNRrA6+9OMODimjJsgXhoMuHz3E3JMAAAAASUVORK5CYII="/> Regresar</button>
+                                <h3 class="subtitulo" >Facultad de Derecho y Ciencias Políticas</h3>
+                                <a href="derecho.html">Derecho</a>
+                                <a href="">Ciencias Políticas y Sociología</a>
+                            </div>
+                            <div class="banner-subcategoria">
+                                <a href="">
+                                    <img src="./img/abogado.jpg" alt="img-tecnologia-banner">
+                                </a>
+                            </div>
+                            <div class="galeria-subcategoria">
+                                <a href="">
+                                    <img src="./img/abogada.jpg" alt="img-tecnologia-galeria1">
+                                </a>
+                                <a href="">
+                                    <img src="./img/abogado2.jpg" alt="img-tecnologia-galeria2">
+                                </a>
+                                <a href="">
+                                    <img src="./img/derecho2.jpg" alt="img-tecnologia-galeria3">
+                                </a>
+                                <a href="">
+                                    <img src="./img/derecho.jpg" alt="img-tecnologia-galeria4">
+                                </a>
+                            </div>
+                    </div>
+
+                    <div class="subcategoria " data-categoria="facultad-medio-ambiente">
+                    <div class="enlaces-subcategoria">
+                        <button class="btn-regresar"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAOJJREFUSEvtld0NwjAMhK+bwQawAUxW2IARGAE2YQTkKkGRldY/dRoeWqkvaePP5/icAZ2eoRMXO3izyntKfQHwSq87USuYoCOAD4DjGrgFnKFZ5RXAzStZCw6FUrIacDhUA24ClcDNoEvgptA5MIdS57q7t+j6d7LhtMSbi0O9bqntI98/84e/AVNCXPU9qNQ0ZmniVUud17s01yZwaXI1Uy6Ba2e+6nKQzpjbIVy5RvHcmZ8BPLxGt4DLstMUOpT2sCZgBVP8U5pAP09aodLt5Imn3uNRrA6+9OMODimjJsgXhoMuHz3E3JMAAAAASUVORK5CYII=" alt="icon-regresar"/> Regresar</button>
+                        <h3 class="subtitulo" >Facultad de Medio Ambiente</h3>
+                        <a href="">Ciencias de Medio Ambiente</a>
+                        <a href="">Ingeniería Forestal</a>
+                        <a href="">Ingeniería Ambiental</a>
+                    </div>
+                    <div class="banner-subcategoria">
+                        <a href="">
+                            <img src="./img/medio-ambiente1.jpg" alt="img-libros-banner">
+                        </a>
+                    </div>
+                    <div class="galeria-subcategoria">
+                        <a href="">
+                            <img src="./img/medio-ambiente.jpg" alt="img-libros-galeria1">
+                        </a>
+                        <a href="">
+                            <img src="./img/medio-ambiente4.jpg" alt="img-libros-galeria2">
+                        </a>
+                        <a href="">
+                            <img src="./img/forestal.jpg" alt="img-libros-galeria3">
+                        </a>
+                        <a href="">
+                            <img src="./img/medio-ambiente6.jpg" alt="img-libros-galeria4">
+                        </a>
+                    </div>
+                    </div>
+                    
+                    <div class="subcategoria" data-categoria="facultad-informacion-filologia">
+                    <div class="enlaces-subcategoria">
+                        <button class="btn-regresar"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAOJJREFUSEvtld0NwjAMhK+bwQawAUxW2IARGAE2YQTkKkGRldY/dRoeWqkvaePP5/icAZ2eoRMXO3izyntKfQHwSq87USuYoCOAD4DjGrgFnKFZ5RXAzStZCw6FUrIacDhUA24ClcDNoEvgptA5MIdS57q7t+j6d7LhtMSbi0O9bqntI98/84e/AVNCXPU9qNQ0ZmniVUud17s01yZwaXI1Uy6Ba2e+6nKQzpjbIVy5RvHcmZ8BPLxGt4DLstMUOpT2sCZgBVP8U5pAP09aodLt5Imn3uNRrA6+9OMODimjJsgXhoMuHz3E3JMAAAAASUVORK5CYII="/> Regresar</button>
+                        <h3 class="subtitulo" >Facultad de Ciencias de Información y Filología Lingüística</h3>
+                        <a href="">Ciencias de la Información y Comunicación</a>
+                        <a href="">Filología Hispana</a>
+                    </div>
+                    <div class="banner-subcategoria">
+                        <a href="">
+                            <img src="./img/press.jpg" alt="img-ropas y accesorios-galeria2">
+                        </a>
+                    </div>
+                    <div class="galeria-subcategoria">
+                        <a href="">
+                            <img src="./img/filologia5.jpg" alt="img-ropas y accesorios-galeria1">
+                        </a>
+                        <a href="">
+                            <img src="./img/prensa.jpg" alt="img-ropas y accesorios-banner">
+                        </a>
+                        <a href="">
+                            <img src="./img/filologia2.jpg" alt="img-ropas y accesorios-galeria3">
+                        </a>
+                        <a href="">
+                            <img src="./img/filologia3.jpg" alt="img-ropas y accesorios-galeria4">
+                        </a>
+
+                    </div>
+
+                    </div>
+
+                    <div class="subcategoria" data-categoria="facultad-pedagogia-educacion">
+                    <div class="enlaces-subcategoria">
+                        <button class="btn-regresar"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAOJJREFUSEvtld0NwjAMhK+bwQawAUxW2IARGAE2YQTkKkGRldY/dRoeWqkvaePP5/icAZ2eoRMXO3izyntKfQHwSq87USuYoCOAD4DjGrgFnKFZ5RXAzStZCw6FUrIacDhUA24ClcDNoEvgptA5MIdS57q7t+j6d7LhtMSbi0O9bqntI98/84e/AVNCXPU9qNQ0ZmniVUud17s01yZwaXI1Uy6Ba2e+6nKQzpjbIVy5RvHcmZ8BPLxGt4DLstMUOpT2sCZgBVP8U5pAP09aodLt5Imn3uNRrA6+9OMODimjJsgXhoMuHz3E3JMAAAAASUVORK5CYII=" alt="icon-regresar"/> Regresar</button>
+                        <h3 class="subtitulo" >Facultad de Pedagogía y Ciencias de la Educación</h3>
+                        <a href="">Acceso</a>
+                        <a href="">Pedagogía Pura</a>
+                        <a href="">Educación Infantil</a>
+                        <a href="">Pedagogía Orientada a Filología</a>
+                        <a href="">Pedagogía Orientada a Ciencias Sociales</a>
+                        <a href="">Pedagogía Orientada  las Lenguas Clásicas (Latín y Griego)</a>
+                    </div>
+                    <div class="banner-subcategoria">
+                        <a href="">
+                            <img src="./img/maestra-alumnos.jpg" alt="img-libros-banner">
+                        </a>
+                    </div>
+                    <div class="galeria-subcategoria">
+                        <a href="">
+                            <img src="./img/educacion.jpg" alt="img-hogar y cocina-galeria1">
+                        </a>
+                        <a href="">
+                            <img src="./img/filologia2.jpg" alt="img-hogar y cocina-galeria2">
+                        </a>
+                        <a href="">
+                            <img src="./img/educacion3.jpg" alt="img-hogar y cocina-galeria3">
+                        </a>
+                        <a href="">
+                            <img src="./img/filologia.jpg" alt="img-hogar y cocina-galeria4">
+                        </a>
+
+                    </div>
+
+                    </div>
+
+                    <div class="subcategoria" data-categoria="facultad-ingenieria-tecnologia">
+                        <div class="enlaces-subcategoria">
+                            <button class="btn-regresar"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAOJJREFUSEvtld0NwjAMhK+bwQawAUxW2IARGAE2YQTkKkGRldY/dRoeWqkvaePP5/icAZ2eoRMXO3izyntKfQHwSq87USuYoCOAD4DjGrgFnKFZ5RXAzStZCw6FUrIacDhUA24ClcDNoEvgptA5MIdS57q7t+j6d7LhtMSbi0O9bqntI98/84e/AVNCXPU9qNQ0ZmniVUud17s01yZwaXI1Uy6Ba2e+6nKQzpjbIVy5RvHcmZ8BPLxGt4DLstMUOpT2sCZgBVP8U5pAP09aodLt5Imn3uNRrA6+9OMODimjJsgXhoMuHz3E3JMAAAAASUVORK5CYII=" alt="icon-regresar"/> Regresar</button>
+                            <h3 class="subtitulo" >Facultad de Ingenierías y Tecnologías</h3>
+                            <a href="">Ingeniería de Agronomía, Pesca, Agroalimentaria</a>
+                            <a href="">Ingeniería de Metalurgia, Geología y Petroleo</a>
+                            <a href="">ingeniería Mecánica y Minas</a>
+                            <a href="">Ingeniería Mecánica</a>
+                            <a href="">Veterinaria</a>
+                        </div>
+                        <div class="banner-subcategoria">
+                            <a href="">
+                                <img src="./img/tec.jpg" alt="img-salud y belleza-banner">
+                            </a>
+                        </div>
+                        <div class="galeria-subcategoria">
+                            <a href="">
+                                <img src="./img/mecanica.jpg" alt="img-salud y belleza-galeria1">
+                            </a>
+                            <a href="">
+                                <img src="./img/electronica.jpg" alt="img-salud y belleza-galeria2">
+                            </a>
+                            <a href="">
+                                <img src="./img/ingenieria.jpg" alt="img-salud y belleza-galeria3">
+                            </a>
+                            <a href="">
+                                <img src="./img/veterinario.jpg" alt="img-salud y belleza-galeria4">
+                            </a>
+                        </div>
+                     </div>
+
+                     <div class="subcategoria " data-categoria="facultad-humanidades-religiosa">
+                        <div class="enlaces-subcategoria">
+                            <button class="btn-regresar"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAOJJREFUSEvtld0NwjAMhK+bwQawAUxW2IARGAE2YQTkKkGRldY/dRoeWqkvaePP5/icAZ2eoRMXO3izyntKfQHwSq87USuYoCOAD4DjGrgFnKFZ5RXAzStZCw6FUrIacDhUA24ClcDNoEvgptA5MIdS57q7t+j6d7LhtMSbi0O9bqntI98/84e/AVNCXPU9qNQ0ZmniVUud17s01yZwaXI1Uy6Ba2e+6nKQzpjbIVy5RvHcmZ8BPLxGt4DLstMUOpT2sCZgBVP8U5pAP09aodLt5Imn3uNRrA6+9OMODimjJsgXhoMuHz3E3JMAAAAASUVORK5CYII=" alt="icon-regresar"/> Regresar</button>
+                            <h3 class="subtitulo" >Facultad de Humanidades y Ciencias Religiosas</h3>
+                            <a href="">Relaciones internacionales y Diplomáticas</a>
+                            <a href="">Turismo, Patrimonio Cultural y archivista</a>
+                            <a href="">Sagrada Escritura</a>
+                            <a href="">Teología Dogmática</a>
+                            <a href="">Teología Moral</a>
+                            <a href="">Filosofía</a>
+                        </div>
+                        <div class="banner-subcategoria">
+                            <a href="">
+                                <img src="./img/Jesús.jpg" alt="img-alimentos y bebidas-banner">
+                            </a>
+                        </div>
+                        <div class="galeria-subcategoria">
+                            <a href="">
+                                <img src="./img/biblioteca.jpg" alt="img-alimentios y bebidas-galeria1">
+                            </a>
+                            <a href="">
+                                <img src="./img/Columna-marzo-Portada-1024x512.png" alt="img-alimentios y bebidas-galeria2">
+                            </a>
+                            <a href="">
+                                <img src="./img/filologia5.jpg" alt="img-alimentos y bebidas-galeria3">
+                            </a>
+                            <a href="">
+                                <img src="./img/griego.jpg" alt="img-alimentos y bebidas-galeria4">
+                            </a>
+                        </div>
+                     </div>
+
+                     <div class="subcategoria " data-categoria="facultad-economicas-administracion">
+                        <div class="enlaces-subcategoria">
+                            <button class="btn-regresar"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAOJJREFUSEvtld0NwjAMhK+bwQawAUxW2IARGAE2YQTkKkGRldY/dRoeWqkvaePP5/icAZ2eoRMXO3izyntKfQHwSq87USuYoCOAD4DjGrgFnKFZ5RXAzStZCw6FUrIacDhUA24ClcDNoEvgptA5MIdS57q7t+j6d7LhtMSbi0O9bqntI98/84e/AVNCXPU9qNQ0ZmniVUud17s01yZwaXI1Uy6Ba2e+6nKQzpjbIVy5RvHcmZ8BPLxGt4DLstMUOpT2sCZgBVP8U5pAP09aodLt5Imn3uNRrA6+9OMODimjJsgXhoMuHz3E3JMAAAAASUVORK5CYII=" alt="icon-regresar"/> Regresar</button>
+                            <h3 class="subtitulo" >Facultad de Ciencias Económicas, Gestión y Administración</h3>
+                            <a href="">Ciencias Económicas</a>
+                            <a href="">Administración y Dirección de Empresas (ADE)</a>
+                            <a href="">Relaciones Laborales y Recursos Humanos</a>
+                            <a href="">Informática y Gestión</a>
+                        </div>
+                        <div class="banner-subcategoria">
+                            <a href="">
+                                <img src="./img/administracion.jpg" alt="img-alimentos y bebidas-banner">
+                            </a>
+                        </div>
+                        <div class="galeria-subcategoria">
+                            <a href="">
+                                <img src="./img/oficina.jpg" alt="img-alimentios y bebidas-galeria1">
+                            </a>
+                            <a href="">
+                                <img src="./img/oficina-adm.jpg" alt="img-alimentios y bebidas-galeria2">
+                            </a>
+                            <a href="">
+                                <img src="./img/oficina3.jpg" alt="img-alimentos y bebidas-galeria3">
+                            </a>
+                            <a href="">
+                                <img src="./img/oficina4.jpg" alt="img-alimentos y bebidas-galeria4">
+                            </a>
+                        </div>
+                     </div>
+
+
+                     <div class="subcategoria " data-categoria="facultad-salud">
+                        <div class="enlaces-subcategoria">
+                            <button class="btn-regresar"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAOJJREFUSEvtld0NwjAMhK+bwQawAUxW2IARGAE2YQTkKkGRldY/dRoeWqkvaePP5/icAZ2eoRMXO3izyntKfQHwSq87USuYoCOAD4DjGrgFnKFZ5RXAzStZCw6FUrIacDhUA24ClcDNoEvgptA5MIdS57q7t+j6d7LhtMSbi0O9bqntI98/84e/AVNCXPU9qNQ0ZmniVUud17s01yZwaXI1Uy6Ba2e+6nKQzpjbIVy5RvHcmZ8BPLxGt4DLstMUOpT2sCZgBVP8U5pAP09aodLt5Imn3uNRrA6+9OMODimjJsgXhoMuHz3E3JMAAAAASUVORK5CYII=" alt="icon-regresar"/> Regresar</button>
+                            <h3 class="subtitulo" >Facultad de Ciencias de Salud</h3>
+                            <a href="">Medicina General</a>
+                            <a href="">Enfermería</a>
+                            <a href="">Grado 1 en Laboratorio Clínico Microbiológico</a>
+                            <a href="">Grado 1 en Higiene y Epidemiología</a>
+                            <a href="">Grado 1 en Enfermería Gineco-obstétrica</a>
+                            <a href="">Curso de nivelación de ATS a Grado 1 de Enfermería</a>
+                        </div>
+                        <div class="banner-subcategoria">
+                            <a href="">
+                                <img src="./img/medicos.jpg" alt="img-alimentos y bebidas-banner">
+                            </a>
+                        </div>
+                        <div class="galeria-subcategoria">
+                            <a href="">
+                                <img src="./img/medicina.jpg" alt="img-alimentios y bebidas-galeria1">
+                            </a>
+                            <a href="">
+                                <img src="./img/enfermera.jpg" alt="img-alimentios y bebidas-galeria2">
+                            </a>
+                            <a href="">
+                                <img src="./img/enfermera3.jpg" alt="img-alimentos y bebidas-galeria3">
+                            </a>
+                            <a href="">
+                                <img src="./img/doctora.jpg" alt="img-alimentos y bebidas-galeria4">
+                            </a>
+                        </div>
+                     </div>
+
+                     <div class="subcategoria " data-categoria="facultad-arquitectura-ingenieria">
+                        <div class="enlaces-subcategoria">
+                            <button class="btn-regresar"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAOJJREFUSEvtld0NwjAMhK+bwQawAUxW2IARGAE2YQTkKkGRldY/dRoeWqkvaePP5/icAZ2eoRMXO3izyntKfQHwSq87USuYoCOAD4DjGrgFnKFZ5RXAzStZCw6FUrIacDhUA24ClcDNoEvgptA5MIdS57q7t+j6d7LhtMSbi0O9bqntI98/84e/AVNCXPU9qNQ0ZmniVUud17s01yZwaXI1Uy6Ba2e+6nKQzpjbIVy5RvHcmZ8BPLxGt4DLstMUOpT2sCZgBVP8U5pAP09aodLt5Imn3uNRrA6+9OMODimjJsgXhoMuHz3E3JMAAAAASUVORK5CYII=" alt="icon-regresar"/> Regresar</button>
+                            <h3 class="subtitulo" >Facultad de Arquitectura e Ingenierías</h3>
+                            <a href="">Arquiitectura</a>
+                            <a href="">Ingeniería Eléctrica</a>
+                            <a href="">Ingeniería Electrónica</a>
+                            <a href="">Ingeniería Mecánica</a>
+                            <a href="">Ingeniería de Obras Públicas</a>
+                            <a href="">Ingeniería Energética</a>
+                            <a href="">Ingeniería de Edificacíon</a>
+                        </div>
+                        <div class="banner-subcategoria">
+                            <a href="">
+                                <img src="./img/arquitecto-ofic.jpg" alt="img-alimentos y bebidas-banner">
+                            </a>
+                        </div>
+                        <div class="galeria-subcategoria">
+                            <a href="">
+                                <img src="./img/arquitecta-ofic.jpg" alt="img-alimentios y bebidas-galeria1">
+                            </a>
+                            <a href="">
+                                <img src="./img/arquitecta2.jpg" alt="img-alimentios y bebidas-galeria2">
+                            </a>
+                            <a href="">
+                                <img src="./img/arquitectura.jpg" alt="img-alimentos y bebidas-galeria3">
+                            </a>
+                            <a href="">
+                                <img src="./img/electronica.jpg" alt="img-alimentos y bebidas-galeria4">
+                            </a>
+                        </div>
+                     </div>
+
+                     <div class="subcategoria " data-categoria="facultad-psicologia-morales">
+                        <div class="enlaces-subcategoria">
+                            <button class="btn-regresar"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAOJJREFUSEvtld0NwjAMhK+bwQawAUxW2IARGAE2YQTkKkGRldY/dRoeWqkvaePP5/icAZ2eoRMXO3izyntKfQHwSq87USuYoCOAD4DjGrgFnKFZ5RXAzStZCw6FUrIacDhUA24ClcDNoEvgptA5MIdS57q7t+j6d7LhtMSbi0O9bqntI98/84e/AVNCXPU9qNQ0ZmniVUud17s01yZwaXI1Uy6Ba2e+6nKQzpjbIVy5RvHcmZ8BPLxGt4DLstMUOpT2sCZgBVP8U5pAP09aodLt5Imn3uNRrA6+9OMODimjJsgXhoMuHz3E3JMAAAAASUVORK5CYII=" alt="icon-regresar"/> Regresar</button>
+                            <h3 class="subtitulo" >Facultad de Psicología y Ciencias Morales</h3>
+                            <a href="">Moral: Moral Fundamental, Educación en Valores, Moral Social o Politología y Dentología Profesional, Moral de la Personalidad y Derechos Humanos</a>
+                            <a href="">Psicología Clínica, Psicologia Social, Psicología de la Educación, Psicología de la Infancia</a>
+                        </div>
+                        <div class="banner-subcategoria">
+                            <a href="">
+                                <img src="./img/sociedad 4.jpg" alt="img-alimentos y bebidas-banner">
+                            </a>
+                        </div>
+                        <div class="galeria-subcategoria">
+                            <a href="">
+                                <img src="./img/sociedad1.jpg" alt="img-alimentios y bebidas-galeria1">
+                            </a>
+                            <a href="">
+                                <img src="./img/sociedad2.jpg" alt="img-alimentios y bebidas-galeria2">
+                            </a>
+                            <a href="">
+                                <img src="./img/dociedad3.jpg" alt="img-alimentos y bebidas-galeria3">
+                            </a>
+                            <a href="">
+                                <img src="./img/sociedad5.jpg" alt="img-alimentos y bebidas-galeria4">
+                            </a>
+                        </div>
+                     </div>
+
+                </div>
+              </div>
+        </div>
+    </nav>
+    <main class="contenedor">
+
+        <article class="container-table">
+            <h2 class="subtitle">Distribución del curso académico 2021/2022.</h2> 
+            <h2 class="subtitle">Primer semestre.</h2> <br>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Número de semana</th>
+                        <th>Fechas (Lunes a viernes)</th>
+                        <th>Dias lectivos</th>
+                        <th>Observaciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Primera semana</td>
+                        <td>Del 01 al 05 de Nov. de 2021 </td>
+                        <td>5</td>
+                        <td class="lectivo"></td>
+                    </tr>
+                    <tr>
+                        <td>Segunda semana</td>
+                        <td>Del 08 al 12 de Nov. de 2021 </td>
+                        <td>5</td>
+                        <td class="lectivo"></td>
+                    </tr>
+                    <tr>
+                        <td>Tercera semana</td>
+                        <td>Del 15 al 19 de Nov. de 2021 </td>
+                        <td>4</td>
+                        <td class="festivo">Miércoles 17 de Nov. <br> Santa Isabel. <br> Patrona de la Ciudad de Malabo.</td>
+                    </tr>
+                    <tr>
+                        <td>Cuarta semana</td>
+                        <td>Del 22 al 26 de Nov. de 2021 </td>
+                        <td>5</td>
+                        <td class="lectivo"></td>
+                    </tr>
+                    <tr>
+                        <td>Quinta semana</td>
+                        <td>Del 29 al 03 de Dic. de 2021 </td>
+                        <td>5</td>
+                        <td class="lectivo"></td>
+                    </tr>
+                    <tr>
+                        <td>Sexta semana</td>
+                        <td>Del 06 al 10 de Dic. de 2021 </td>
+                        <td>4</td>
+                        <td class="festivo">Miércoles 08 de Dic. <br>  Inmaculada Concepción. <br> Patrona de Guinea Ecuatorial.</td>
+                    </tr>
+                    <tr>
+                        <td>Séptima semana</td>
+                        <td>Del 13 al 17 de Dic. de 2021 </td>
+                        <td>5</td>
+                        <td class="lectivo"></td>
+                    </tr>
+                    <tr>
+                        <td>Octava semana</td>
+                        <td>Del 20 al 22 de Dic. de 2021</td>
+                        <td>3</td>
+                        <td class="festivo">Del 23 al 22 de Dic. <br> hasta el 07 de enero 2022, <br> ambos inclusive. <br> VACACIONES DE NAVIDAD. </td>
+                    </tr>
+                    <tr>
+                        <td>Novena semana</td>
+                        <td>Del 10 al 14 de Enero de 2022</td>
+                        <td>5</td>
+                        <td class="lectivo"></td>
+                    </tr>
+                    <tr>
+                        <td>Décima semana</td>
+                        <td>Del 17 al 21 de Enero de 2022</td>
+                        <td>5</td>
+                        <td class="lectivo"></td>
+                    </tr>
+                    <tr>
+                        <td>Decima primera semana</td>
+                        <td>Del 24 al 28 de Enero de 2022</td>
+                        <td>5</td>
+                        <td class="lectivo"></td>
+                    </tr>
+                    <tr>
+                        <td>Decima segunda semana</td>
+                        <td>Del 31 al 14 de Enero al 04 febrero de 2022</td>
+                        <td>5</td>
+                        <td class="lectivo"></td>
+                    </tr>
+                    <tr>
+                        <td>Decima tercera semana</td>
+                        <td>Del 07 al 11 de febrero de 2022</td>
+                        <td>5</td>
+                        <td class="lectivo"></td>
+                    </tr>
+                    <tr>
+                        <td>Decima cuarta semana</td>
+                        <td>Del 14 al 18 de febrero de 2022</td>
+                        <td>5</td>
+                        <td class="lectivo"></td>
+                    </tr>
+                    <tr>
+                        <td>Decima quinta semana</td>
+                        <td>del 21 al 25 de febrero de 2022</td>
+                        <td>5</td>
+                        <td class="lectivo"></td>
+                    </tr>
+                    <tr>
+                        <td id="total">TOTAL DIAS DE CLASE DEL PRIMER SEMESTRE</td>
+                        <td>72</td>
+                    </tr>
+                    <tr>
+                        <td>Decima sexta semana. <br> CIERRE DE LAS ACTAS EN PRIMERA CONVOCATORIA.</td>
+                        <td>Del 28 de febrero al 04 de marzo de 2022</td>
+                        <td>5</td>
+                        <td class="lectivo"></td>
+                    </tr>
+                    <tr>
+                        <td>Decima séptima semana. <br> CIERRE DE LAS ACTAS EN SEGUNDA CONVOCATORIA.</td>
+                        <td>Del 07 de febrero al 11 de marzo de 2022</td>
+                        <td>5</td>
+                        <td class="lectivo">CONVOCATORIA EXTRAORDINARIA. <br> TRABAJO FIN DE GRADO.</td>
+                    </tr>
+                    <tr>
+                        <td>Decima octava semana.  <br> CIERRE DE LAS ACTAS EN SEGUNDA CONVOCATORIA.</td>
+                        <td>Del 14 de febrero al 18 de marzo de 2022</td>
+                        <td>5</td>
+                        <td class="lectivo">CONVOCATORIA EXTRAORDINARIA. <br> TRABAJO FIN DE GRADO</td>
+                    </tr>
+                    <tr>
+                        <td id="total">TOTAL DÍAS DE CIERRES DE ACTAS</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td id="total">TOTAL GLOBAL DÍAS DEL PRIMER SEMESTRE </td>
+                        <td>86</td>
+                    </tr>
+                    
+                </tbody>
+            </table> <br>
+
+        </article>
+    </main>
+
+    <footer>
+        <div class="container-footer">
+            <div class="contacto" >
+                <h3>Universidad Nacional de Guinea Ecuatorial</h3>
+                <p>Avda. Hassan II - Apartado de correo 4582 <br> Malabo Guinea Ecuatorial.</p>
+                <h3>Teléfonos de contacto:</h3>
+            <a href="Tel: +240 33 09 15 09 "><p>Tel: +240 33 09 15 09 </p></a>
+            <a href="Tel: +240 333 09 42 36 "><p>Tel: +240 333 09 42 36 </p></a>
+            <a href="Tel: +240 333 09 16 44 "><p>Tel: +240 333 09 16 44 </p></a>
+            <a href="https://accounts.google.com/signin/v2/identifier?flowEntry=AddSession&hl=es-419&flowName=GlifWebSignIn"> <img src="./img/correos-electronicos.png" alt=""> rector@unge-edu.gq</a>
+            </div>
+            <div class="legal">
+                          <i class="fa fa-copyright" aria-hidden="true"> copyright 2022</i>
+            </div>
+            <div class="redes" >
+                <h3>Síguenos en:</h3>
+                <a href="https://www.instagram.com/urbanomangomo/ "> <img class="instagram" src="./img/bxl-instagram.svg" alt="instagram"></a>
+                    <a href="https://twitter.com/UrbanoAkoro"><img class="icon-twitter" src="./img/bxl-twitter.svg" alt="twitter"></a>
+                    <a href="#"><img class="icon-facebook" src="./img/bxl-linkedin.svg" alt="Linkedin"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js" ></script>
+</body>
+</html>

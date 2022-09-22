@@ -1,0 +1,349 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #364343;
+}
+.contenedor .llama {
+    display: none;
+}
+.title {
+    color: red;
+    text-align: center;
+}
+.title-requisitos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding:5px;
+    margin: 0 auto;
+    text-align: center;
+    color: red;
+    font-size: 20px;
+}
+.title-requisitos {    /* Animacion del titulo del formulario*/
+    position: relative;
+    z-index: 1;
+    /* aquí empezamos con la animacion de la cabeza completa*/
+    animation-name:layer;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes layer {
+    0% {
+      bottom: 10px;
+    }
+    25% {
+        bottom: -20px;   /* aquí ponemos el tamaño que queremos que baje*/
+    }
+    100% {
+        bottom: 10px;
+    }
+}
+.subtitle-requisitos1 {
+    text-align: center;
+    width: 300px;
+    margin: 5px auto;
+    padding: 10px;
+ }
+.requisitos {
+    display: flex;
+    justify-content: center;
+   /* background-image: url(../img/escudo-unge.jpg);
+    background-size: contain; */
+    margin-top: 0 auto;
+}
+.subtitle-requisitos {
+   text-align: center;
+   color: #fff;
+   background:mediumseagreen;
+   box-shadow: 0px 3px 6px rgba(0, 0, 0, .30);
+   margin: 5px;
+   padding: 5px;
+}
+.requisitos ul{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+   /* background:deepskyblue;  */
+    color: #364343;
+    border-radius: 5px;
+    margin: 10px auto;
+    padding: 10px;
+    list-style: none;
+}
+.nuevos-estudiantes {
+    margin: 0 auto;
+}
+.antiguos-estudiantes {
+    margin: 10px auto;
+}
+.requisitos ul li {
+    padding: 5px;
+}
+.title-campus-facultades {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    background: mediumseagreen;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .30);
+    color: #fff;
+ }
+   .campus-facultades {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    border-radius: 20px;
+    gap: 10px;
+    }
+    .title-campus-facultades p {
+        margin: auto 10px;
+    }
+    .campus-facultades a {
+        display: grid;
+        margin: 10px auto;
+        border-radius: 5px;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, .30);
+        text-align: center;
+        color: #364343;
+        width: 280px;
+    }
+    .campus-facultades a:hover {
+        opacity: .5;
+    }
+    .campus-facultades a img {
+        padding: 0;
+        height: 210px;
+        width: 100%;
+        object-fit: cover;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, .30);
+        margin-bottom: 10px;
+    }
+    .campus-facultades a span {
+        padding: 8px;
+        background:  rgba(0, 0, 0, .30);
+        color: green;
+    }
+    .campus-facultades a span:hover {
+        padding: 8px;
+        background:  rgba(0, 0, 0, .30);
+        color: #fff;
+    }
+    .campus-facultades .title {
+        margin: 10px 0;
+        color: red;
+        font-size: 20px;
+        padding: 10px;
+    }
+    
+.record {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+.record div {
+    background: rgb(10, 14, 21);
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+    display: grid;
+    align-items: center;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .30);
+    margin: 0 auto;
+    margin: 10px;
+}
+.record .p1 {
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+.record .p2 {
+    font-size: 12px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+.record h3 {
+    font-size: 15px;
+    color:  rgba(206, 4, 4, 0.765);
+    margin: 0 auto;
+}
+.container-form {
+    background-image: url(/img/enfermera.jpg);
+    display: block;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .30);
+}
+.container-form h4 {
+    margin: 10px;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+}
+.form-contacto {
+    width: 100%;
+    color: #273939;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 0;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.form {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+.title-form {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 5px;
+    color: #fff;
+    background:mediumseagreen;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .30);
+    transition:cubic-bezier(0.15845, 0.885, 0.32, 1.275);
+}
+input {
+    height: 30px;
+    border-radius: 6px;
+    margin: 3px auto;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .30);
+    border: none;
+}
+.input-enviar {
+    margin: 5px auto;
+    height: 30px;
+    width: 100px;
+    background: rgba(0, 128, 0, 0.872);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .30);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.input-enviar:hover {
+    background: rgb(25, 215, 25);
+    height: 32px;
+}
+select {
+    height: 30px;
+    margin: 5px auto;
+    width: 100%;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .30);
+    border: none;
+    border-radius: 6px;
+}
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px auto;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .30);
+}
+
+@media screen and (max-width: 1000px) {
+    .contenedor {
+        margin: auto;
+        width: 100%;
+    }
+    .contenedor .llama {
+        display: block;
+    }
+    .requisitos {
+        display: block;
+    }
+    .requisitos ul {
+        display: block;
+        margin: 5px;
+        width: 100%;
+    }
+    .title-requisitos {
+        font-size: 18px;
+    }
+    .subtitle-requisitos {
+        font-size: 17px;
+    }
+    .campus-facultades {
+        width: 90%;
+        display: grid;
+        margin: 20px auto;
+    }
+    .container-form {
+        box-shadow: none;  
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    .title-requisitos {
+        font-size: 16px;
+    }
+    .subtitle-requisitos1 {
+        font-size: 15px;
+    }
+    .form-contacto {
+         width: 100%;
+    }
+    input {
+        width: 90%;
+    }
+    select {
+        width: 90%;
+    }
+    textarea {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .title-requisitos {
+        font-size: 15px;
+    }
+    .subtitle-requisitos1 {
+        font-size: 15px;
+    }
+    .subtitle-requisitos {
+        font-size: 15px;
+    }
+    .campus-facultades {
+        width: 100%;
+    }
+      .container-form {
+        box-shadow: none;  
+        width: 100%;
+    }
+    .form-contacto {
+        width: 100%;
+        box-shadow: none;
+    }
+    .title-form {
+        font-size: 18px;
+    }
+    .record {
+        display: flex;
+        grid-template-columns:1fr ;
+        width: 100%;
+    }
+}
