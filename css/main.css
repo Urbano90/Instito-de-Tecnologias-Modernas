@@ -6,7 +6,6 @@
 }
 body {
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;
     color: #364343;
 }
 .contenedor .llama {
@@ -270,6 +269,7 @@ textarea {
     }
     .contenedor .llama {
         display: block;
+        padding: 20px 10px;
     }
     .requisitos {
         display: block;
@@ -318,12 +318,6 @@ textarea {
     }
 }
 @media screen and (max-width: 500px) {
-    .title-requisitos {
-        font-size: 15px;
-    }
-    .subtitle-requisitos1 {
-        font-size: 15px;
-    }
     .subtitle-requisitos {
         font-size: 15px;
     }
