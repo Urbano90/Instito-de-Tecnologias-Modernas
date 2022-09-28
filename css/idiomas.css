@@ -1,14 +1,5 @@
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    font-family: calibri;
-    font-size: 15px;
-}
 .title {
     margin-top: 10px;
     text-align: center;
@@ -81,19 +72,10 @@ article {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
-ul {
-    margin: 10px 20px;
-}
 @media screen and (max-width: 1000px) {
     .contenedor {
         margin: auto;
         width: 100%;
-    }
-    .container-form {
-        box-shadow: none;  
-    }
-    .form-contacto {
-        width: 80%;
     }
 }
 
@@ -107,30 +89,4 @@ ul {
         height: 40%;
         width: 98%;
     }
-    .form-contacto {
-        width: 100%;
-   }
-   .title-form {
-       font-size: 19px;
-   }
-   input {
-       width: 90%;
-   }
-   select {
-       width: 90%;
-   }
-   textarea {
-       width: 90%;
-   }
-}
-
-@media screen and (max-width: 500px) {
-    .form-contacto {
-        width: 100%;
-        box-shadow: none;
-    }
-    .title-form {
-        font-size: 18px;
-    }
-    
 }

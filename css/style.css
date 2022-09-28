@@ -159,16 +159,15 @@ footer a:hover {
     padding: 10px 0;
 }
 .redes a {
-    margin: 0 auto;
     padding: 0;
 }
 .container-footer img {
     height: 25px;
     width: 25px;
-    object-fit: contain;
+    object-fit: cover;
 }
 .container-footer img:hover {
-    height: 45px;
+    height: 35px;
 }
 @media screen and (max-width: 1000px) {
     .menu .contenedor-enlaces-nav {
@@ -183,7 +182,6 @@ footer a:hover {
      .container-footer {
          width: 100%;
      }
-
 }
 @media screen and (max-width: 800px) {
     body {
@@ -303,16 +301,13 @@ footer a:hover {
         width: 100%;
         justify-content: center;
     }
-
-
     }
+
     @media screen and (max-width: 515px) {
         .eslogan h4 {
            font-size: 13px;
         }
         .eslogan h3 {
             font-size: 13px;
-         }
-
-
-        }
+    }
+}

@@ -108,6 +108,9 @@ body {
     .title-campus-facultades p {
         margin: auto 10px;
     }
+    .title-campus-facultades span {
+        color: red;
+    }
     .campus-facultades a {
         display: grid;
         margin: 10px auto;
