@@ -115,10 +115,10 @@ body {
         display: grid;
         margin: 10px auto;
         border-radius: 5px;
-        box-shadow: 0px 3px 6px rgba(0, 0, 0, .30);
+        box-shadow: 0px 3px 6px mediumturquoise;
         text-align: center;
         color: #364343;
-        width: 280px;
+        width: 100%;
     }
     .campus-facultades a:hover {
         opacity: .5;
@@ -289,7 +289,7 @@ textarea {
         font-size: 17px;
     }
     .campus-facultades {
-        width: 90%;
+        width: 95%;
         display: grid;
         margin: 20px auto;
     }
@@ -323,9 +323,6 @@ textarea {
 @media screen and (max-width: 500px) {
     .subtitle-requisitos {
         font-size: 15px;
-    }
-    .campus-facultades {
-        width: 100%;
     }
       .container-form {
         box-shadow: none;  
