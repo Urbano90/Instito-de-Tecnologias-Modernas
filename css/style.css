@@ -224,7 +224,8 @@ footer a:hover {
         display: flex;
         margin: 0 10px;
         border-radius: 6px;
-        width: 40%;
+        width: 100%;
+        justify-content: start;
     }
      .btn-menu-cerrar {
         display: none; /* mostramos el icono de cerrar menu para que no se vea en dispositivos moviles */
