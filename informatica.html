@@ -45,16 +45,20 @@ article {
     align-items: center;
     justify-content: center;
 }
-.container-diseno-web a {
+.container-asignaturas {
+    display: block;
+    width: 270px;
     padding: 10px;
     margin: 5px;
     color: #fff;
     background: dodgerblue;
     border-radius: 8px;
-    text-align: center;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, .30);
 } 
-.container-diseno-web a:hover {
+.container-asignaturas a {
+    color: #fff;
+}
+.container-asignaturas:hover {
     color: #fff;
     background: rgb(26, 234, 26);
 }
@@ -93,6 +97,9 @@ ul {
 }
 .container-tema-pdf {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     gap: 15px;
 }
 .container-texto {
@@ -226,111 +233,14 @@ ul {
                 </div>
             </div>
         </article>
-        
-        <h2 class="title">Diseño web</h2>
-        <br>
-        <div class="container-diseno-web">
-            <a href="#glosario-tema1">Glosario del Tema I</a> 
-            <a href="#container-tema1-pdf">Tema I </a> 
-            <a href="#ejercicio-tema1">Ejercicio del Tema I</a> 
-            <a href="#glosario-tema2">Glosario del Tema II</a>
-            <a href="#container-tema2-pdf">Tema II </a> 
+        <div class="container-asignaturas">
+            <a href="./asignatura-diseño-web.html">
+                Asignatura de Diseño Web
+                <p>Profesor: Urbano Akoro Mangomo</p>
+            </a>
         </div>
-        <h2 class="tema"><u>Tema I: Reconocimiento de las características de lenguaje de marcas.</u></h2> <br>
-        <h3>Objetivos del tema:</h3>
-        <ul>
-            <li>Iniciarse en el mundo de los lenguajes de marcas, indicando sus características más generales, reconociendo las ventajas que proporcionan, 
-                estudiando su clasificación y extructura e identificando los más relevantes</li>
-            <li>Como cada vez son más las herramientas que permiten crear, gestionar y manipular este tipo de documentos, es de vital importancia que conozcas el 
-                ámbito de aplicación de estos lenguajes y que gracias de la inclusión de los ejemplos reales de su uso, comprenderás la necesidad de su estudio.</li>
-        </ul>
-              
-              
-        <div id="glosario-tema1" class="container-glosario">
-            <h3><u>Glosario del Tema I:</u></h3> <br>
-            <h4>ASCI.</h4>
-            <P>Sigla inglesa que significa "codigo estandar estadounidense para el intercambio de información". Código de caracteres basado
-                 en el alfabeto latino creado por el comité estadounidense de estandares en 1963.</P>
-            <h4>C# o C Sharp.</h4>
-            <p>Lenguaje de programacion de Microsoft para la plataforma.NET, de sintaxis similar a C++ o java.</p>
-            <h4>Java EE.</h4>
-            <p>Conocido como Java Enterprise Edition, es una plataforma de programación que se usa para el desarrollo y ejecucion de aplicaciones.</p>
-            <h4>JavaScript.</h4>
-            <p>Lenguaje de programación interpretado y poco tipado, usado mayormente en el lado del cliente junto con documentos HTML, haciendolo dinámico y mejorando su interfaz.</p>
-            <h4>RTF.</h4>
-            <p>Formato de texto enriquecido desarrollado por Microsoft.</p>
-            <h4>TeX.</h4>
-            <p>Sistema topográfico usado por los matemáticos,físicos e informáticos de distribución y modificación libre, escrito por Donald E. Kunth.</p>
-            <h4>Unicode.</h4>
-            <p>Estandar de codificacióin de caracteres mantenido por la UTC, que asocia cada caracter un identificador numérico.</p>
-            <h4>Visual Studio.</h4>
-            <p>Entorno de desarrollo que soporta lenguajes C++, java, C#, ASP.NET, etc.</p>
-            <h4>W3C (World Wide Web Consortium).</h4>
-            <p>Consorcio internacional creado en 1994 para generar estandares relacionados con la red informática mundial (www).</p>
-            <h4>XMPP.</h4>
-            <p>Protocolo extensible de mensajería y comunicación de presencia que está basado en XML y se emplea en mensajería istantánea.</p>
-        </div><br>
-        <div id="container-tema1-pdf" class="container-tema-pdf">
-            <iframe class="pdf" src="./pdf/Tema1-Reconocimiento-de-las-caracteristicas-de-lenguaje-de-marcas.pdf" width=50%" height="400px" margin-bottom="10px" frameborder="0"></iframe>
-            <br><br>
-            <iframe class="pdf" src="./pdf/Tema1-parte-2-Reconocimiento-de-las-caracteristicas-de-lenguaje-de-marcass.pdf" width=50%" height="400px" frameborder="0"></iframe>
-        </div>
+        <p>Para ver las clases de Desarrollo web cliquetea el botón azul o entra <a href="./asignatura-diseño-web.html">Aqui</a>, dichas clases són online y se puede consultar al profesor a traves de su whatsapp pulsando  <a class="whatsapp" href="whatsapp://send?text=Hola profesor, Me gustaria saber sobre&phone=+240222703397&abid=+240222703397">Aquí<img src="./img/bxl-whatsapp.svg" alt="icon-whatsapp"></a>.</p>
         <br><br>
-        <div id="ejercicio-tema1" class="container-tema-pdf">
-            <div class="container-texto">
-                <h3>Ejercicios del Tema I.</h3>
-                <p>Los ejercicios consisten en evaluar el interés de los alumnos y su nivel de captación sobre todo lo que hemos podido hablar en el primer tema. Dependiendo a la implicación
-                     de los alumnos, el ejercicio puede ser considerado como primera nota del primer cuatrimestre. Por lo que viene bien que todos puedan resolverlo para que pueda conocer el nivel de implicación de todos.</p>
-            </div>
-            <iframe class="pdf" src="./pdf/Ejercicios-tema1.pdf" width=100%" height="400px" frameborder="0"></iframe>
-        </div> 
-        <br>
-<hr>
-        <h2 class="tema"><u>Tema II: Utilización de lenguajes de marcas en entornos web.</u></h2> <br>
-        <h3>Objetivos del tema:</h3>
-        <ul>
-            <li>introducirse en el uso de los lenguajes de marcas en entornos web, identificando los relacionados con la web y sus diferentes versiones.</li>
-            <li>Analizar la estrectura de un documento HTML e identificar las secciones que lo componen serán los primeros aspectos que verás, junto con el estudio de las distintas herramientas para lla creación de estos documentos.</li>
-            <li>El uso de los elementos de este lenguaje es de vital importancia, por lo que describir la funcionalidad de las principales etiquetas y atributos te ayudará en su compresión y manejo. Para dotar de estilos a estas páginas, 
-                aprenderás las ventajas que apartorta la utilización de hojas de estilo.</li>
-        </ul>
-
-        <div id="glosario-tema2" class="container-glosario">
-            <h3><u>Glosario del Tema II:</u></h3> <br>
-            <h4>AJAX.</h4>
-            <P>Sigla de Asynchronous JavaScript And XML. Técnica de programación web de tecnología asíncrona, creada en el 2005 por Jesse James Garrett, que permiten obtener respuestas en 
-                segundo plano que vienen del servidor sin tener que recargar la página completa.</P>
-            <h4>CSS.</h4>
-            <p>Sigla inglesa que significa "Hoja de estilo en cascada". Lenguaje de estilo gráfico que se emplea para establecer diseño visual en los documentos web.</p>
-            <h4>OS/2.</h4>
-            <p>Sistema operativo desarrollado por IBM, aunque en sus comienzos también participó Microsoft, cuyas siglas se interpretan como "sistema operativo de segunda generación".</p>
-            <h4>SASS.</h4>
-            <p>Sigla de syntactically awesome style sheets. Metallenguaje de CSS evolucionado a un lenguaje de script, SassScript.</p>
-        </div>
-        <br>
-        <div class="container-tema-pdf">
-            <div class="container-texto">
-                <h3><a href="https://visualstudio.microsoft.com/es/">Visual Studio Code</a>.</h3>
-                <p>Es un panel de inicio creativo que se puede usar para editar, depurar y compilar código y , después, publicar una aplicación. Entorno de desarrollo creado 
-                    por Microsoft y actualmente es el más utilizado por los desarrolladores a nivel mundial. Pulse <a href="https://visualstudio.microsoft.com/es/">Aquí</a> para descargar <a href="https://visualstudio.microsoft.com/es/">Visual Studio Code</a>.</p>
-            </div>
-            <div class="container-video">
-                <h3>Extensiones Visual Studio</h3>
-                <iframe width="90%" height="315" src="https://www.youtube.com/embed/f0pXa6Mm6D4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-       
-        <br>
-        <div id="container-tema2-pdf" class="container-tema-pdf">
-            <iframe class="pdf" src="./pdf/Tema2-utilizacion-de-lenguajes-de-marcas-en-entornos-web.pdf" width=50%" height="400px" margin-bottom="10px" frameborder="0"></iframe>
-            <div class="container-video">
-                <h3>Aprende a crear un documento HTML con Visual Studio</h3>
-                <iframe class="video-youtube" width="90%" height="320" src="https://www.youtube.com/embed/qPExX6Pngl0" title="video aprender a crear un archivo HTML con Visual Studio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-        <br><br>
-        
-
     </main>
     <footer>
         <div class="container-footer">
@@ -338,16 +248,16 @@ ul {
                 <h3>Instituto de Tecnologías Modernas</h3>
                 <p>Nkolombong-Bata Guinea Ecuatorial.</p>
                 <br>
-                <h3>Teléfonos de contacto del profesor:</h3>
-            <a href="Tel: +240 222 703 397 "><p>Tel: +240 222 703 397 </p></a>
-            <a href="Tel: +240 555 685 775 "><p>Tel: +240 555 685 775 </p></a>
+                <h3>Teléfonos de contacto:</h3>
+            <a href="Tel: +240 222 605 885 "><p>Tel: +240 222 605 885 </p></a>
+            <a href="Tel: +240 222 061 695 "><p>Tel: +240 222 061 695 </p></a>
             </div>
             <div class="redes" >
                 <h3>Correo:</h3>
-                <p> <img src="./img/bx-mail-send.svg" alt="icon correo">urbanoakoro1991@gmail.com </p>
+                <p> <img src="./img/bx-mail-send.svg" alt="icon correo">Sarielesono@gmail.com </p>
                 <h3>Síguenos en:</h3>
-                <a href="https://www.instagram.com/urbanomangomo/ "> <img class="instagram" src="./img/bxl-instagram.svg" alt="icon instagram">Instagram</a>
-                <a class="whatsapp" href="whatsapp://send?text=Hola profesor, Me gustaria saber sobre&phone=+240222703397&abid=+240222703397"><img src="./img/bxl-whatsapp.svg" alt="icon-whatsapp">Whatsapp</a>
+                <a href="#"> <img class="instagram" src="./img/bxl-facebook-square.svg" alt="icon facebook">Facebook</a>
+                <a class="whatsapp" href="whatsapp://send?text=Hola, Me gustaria saber sobre&phone=+240222061695&abid=+240222061695"><img src="./img/bxl-whatsapp.svg" alt="icon-whatsapp">Whatsapp</a>
             </div>
         </div>
         <div class="legal">
