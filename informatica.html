@@ -76,7 +76,6 @@ article {
 ul {
     display: grid;
     margin: 10px 20px;
-
 }
 .container-glosario {
     display: block;
@@ -94,13 +93,20 @@ ul {
 }
 .container-tema-pdf {
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 .container-texto {
     display: block;
     width: 30%;
     justify-content: center;
     align-items: center;
+}
+.container-video {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
 }
 @media screen and (max-width: 1150px) {
         .container-tema-pdf {
@@ -112,6 +118,7 @@ ul {
     }
     iframe {
         width: 100%;
+        margin: 10px;
     }
 }
 @media screen and (max-width: 530px) {
@@ -123,12 +130,12 @@ ul {
     }
 }
 
-    </style>
+</style>
+
     <title>Institutos de Tecnologías Modernas</title>
 </head>
 <body>
 <nav class="menu" id="menu">
-  
     <div class="contenedor  contenedor-botones-menu">
         <!-- Los dos botones deben contener los iconos de menu y cerrar menu-->
         <button id="btn-menu-barras" class="btn-menu-barras"> <img src="./img/menu.png"/> </button>
@@ -155,7 +162,7 @@ ul {
             <br>
             <h2 class="title-requisitos">¡ El primer cuatrimestre termina el dia 10 de febrero del año 2023 !</h2>
             <br>
-            <p>En los últimos años, la informática a evolucionado asta el grado en que el ser humano ya puede hacer cosas que antes eran 
+            <p>En los últimos años, la infor3mática a evolucionado asta el grado en que el ser humano ya puede hacer cosas que antes eran 
                 imposibles para él. Estudiar actualmente la informática para nosotros, es estar actualizado y intender el las cosas de una otra manera.</p>
             <h3 class="subtitle">El programa se subdivide en 4 cuatrimestres:</h3>
             <br>
@@ -298,15 +305,29 @@ ul {
             <p>Sigla de syntactically awesome style sheets. Metallenguaje de CSS evolucionado a un lenguaje de script, SassScript.</p>
         </div>
         <br>
-
+        <div class="container-tema-pdf">
+            <div class="container-texto">
+                <h3><a href="https://visualstudio.microsoft.com/es/">Visual Studio Code</a>.</h3>
+                <p>Es un panel de inicio creativo que se puede usar para editar, depurar y compilar código y , después, publicar una aplicación. Entorno de desarrollo creado 
+                    por Microsoft y actualmente es el más utilizado por los desarrolladores a nivel mundial. Pulse <a href="https://visualstudio.microsoft.com/es/">Aquí</a> para descargar <a href="https://visualstudio.microsoft.com/es/">Visual Studio Code</a>.</p>
+            </div>
+            <div class="container-video">
+                <h3>Extensiones Visual Studio</h3>
+                <iframe width="90%" height="315" src="https://www.youtube.com/embed/f0pXa6Mm6D4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+       
+        <br>
         <div id="container-tema2-pdf" class="container-tema-pdf">
             <iframe src="./pdf/Tema2-utilizacion-de-lenguajes-de-marcas-en-entornos-web.pdf" width=50%" height="400px" margin-bottom="10px" frameborder="0"></iframe>
+            <div class="container-video">
+                <h3>Aprende a crear un documento HTML con Visual Studio</h3>
+                <iframe class="video-youtube" width="90%" height="320" src="https://www.youtube.com/embed/qPExX6Pngl0" title="video aprender a crear un archivo HTML con Visual Studio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
         <br><br>
-        <h3><a href="https://visualstudio.microsoft.com/es/">Visual Studio Code</a>.</h3>
-        <p>Es un panel de inicio creativo que se puede usar para editar, depurar y compilar código y , después, publicar una aplicación. Entorno de desarrollo creado 
-            por Microsoft y actualmente es el más utilizado por los desarrolladores a nivel mundial. Pulse <a href="https://visualstudio.microsoft.com/es/">Aquí</a> para descargar <a href="https://visualstudio.microsoft.com/es/">Visual Studio Code</a>.</p>
-        <br>
+        
+
     </main>
     <footer>
         <div class="container-footer">
